@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eclipse</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <p id="txtScore">SCORE: 0</p>
+
+    <div class="modal" id="startModal">
+      <div id="startModalContainer">
+        <h1 id="title">ECLIPSE</h1>
+      </div>
+    </div>
+
+    <div class="modal" id="gameOverModal">
+      <div id="gameOverContainer">
+        <h2>GAME OVER</h2>
+        <hr />
+        <h3 id="gameOverScore">0</h3>
+        <p>YOUR SCORE</p>
+        <button
+          id="btnNewGame"
+          type="button"
+          title="new game"
+          aria-label="new game"
+        >
+          NEW GAME
+        </button>
+      </div>
+    </div>
+
+    <canvas></canvas>
+
+    <script src="/js/classes.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

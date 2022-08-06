@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  cursor: crosshair;
+}
+
+#txtScore {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  text-shadow: 0 0 8px #48fcff;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 8px;
+  color: #48fcff;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#startModal {
+  opacity: 1;
+  z-index: 1;
+  background-color: #000;
+}
+
+#startModalContainer {
+  cursor: pointer;
+  width: 85vw;
+  max-width: 500px;
+  height: 85vw;
+  max-height: 500px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9) inset;
+  background-color: #48fcff;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#startModalContainer:hover {
+  background-color: #000;
+  box-shadow: 0 0 10px #48fcff;
+  color: #48fcff;
+}
+
+#title {
+  font-size: 2.5rem;
+  letter-spacing: 1.875rem;
+  text-indent: 1.875rem;
+  text-shadow: 0 0 8px #48fcff;
+}
+
+#gameOverContainer {
+  width: 90vw;
+  max-width: 500px;
+  padding: 16px;
+  box-shadow: 0 0 5px #48fcff inset;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#gameOverContainer > * {
+  text-shadow: 0 0 8px #48fcff;
+  margin: 10px;
+}
+
+hr {
+  padding: 1px;
+  box-shadow: 0 0 5px #48fcff;
+  background-color: #48fcff;
+}
+
+#gameOverScore {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #48fcff;
+}
+
+#btnNewGame {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px #48fcff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#btnNewGame:hover {
+  background-color: #48fcff;
+  box-shadow: 0 0 10px #48fcff;
+}
